@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:paddingBottom="20dp">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="65dp"
+        android:gravity="center_vertical"
+        android:orientation="horizontal">
+
+        <de.hdodenhof.circleimageview.CircleImageView
+            android:id="@+id/iv_userimage"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:layout_margin="7.5dp"
+            android:src="@mipmap/ic_launcher" />
+
+        <TextView
+            android:id="@+id/tv_date"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:fontFamily="monospace"
+            android:textSize="18sp"
+            tools:text="2023.11.05" />
+    </LinearLayout>
+
+    <ImageView
+        android:id="@+id/iv_feed"
+        android:layout_width="match_parent"
+        android:layout_height="400dp"
+        android:scaleType="fitXY"
+        tools:srcCompat="@drawable/ic_launcher_background" />
+
+    <HorizontalScrollView
+        android:layout_width="match_parent"
+        android:layout_height="45dp">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="horizontal">
+
+            <com.greenfrvr.hashtagview.HashtagView
+                android:id="@+id/tag1"
+                style="@style/HashtagView"
+                android:layout_width="300dp"
+                android:layout_height="match_parent"
+                app:rowDistribution="left"
+                app:rowGravity="left"
+                app:rowMode="wrap"
+                app:tagBackground="@color/white"
+                app:tagMaxWidth="400dp"
+                app:tagMinWidth="5dp"
+                app:tagPaddingBottom="2dp"
+                app:tagPaddingTop="2dp"
+                app:tagTextColor="@color/black"
+                app:tagTextSize="18sp" />
+
+
+        </LinearLayout>
+    </HorizontalScrollView>
+
+
+    <TextView
+        android:id="@+id/tv_text"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="20dp"
+        android:paddingLeft="10dp"
+        android:textSize="18sp"
+        android:text="점심시간에 친구들과 함꼐 도시락을 먹는데 경치 좋고 공기 맑은 곳이라 더욱 맛이 좋았다. 정말 좋은 곳이었다." />
+
+
+</LinearLayout>

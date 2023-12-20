@@ -1,0 +1,40 @@
+<!-- res/layout/diary_entry.xml -->
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:padding="16dp">
+
+    <TextView
+        android:id="@+id/dateTextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textColor="#FF9090"
+        android:textSize="15sp" />
+
+    <TextView
+        android:id="@+id/tagsTextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/dateTextView"
+        android:layout_marginTop="8dp"
+        android:textSize="16sp" />
+
+    <TextView
+        android:id="@+id/contentTextView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/tagsTextView"
+        android:layout_marginTop="8dp"
+        android:textSize="18sp" />
+
+    <ImageView
+        android:id="@+id/photoImageView"
+        android:layout_width="130dp"
+        android:layout_height="130dp"
+        android:layout_below="@id/contentTextView"
+        android:layout_marginTop="8dp"
+        android:scaleType="centerCrop"
+        android:src="@drawable/ic_default_photo" />
+
+</RelativeLayout>
